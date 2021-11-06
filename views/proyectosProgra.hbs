@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Normalize y estilo-->
+   <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="../assets/css/estiloPrueba.css">
+    
+    <title>Proyectos</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    {{> header}}
+
+   
+    <!--MAIN-->
+
+
+    <div style="margin: 10px;">
+        <a href="https://rociosaenz-constructora.herokuapp.com/"><button class="btn-mongoDB">Ir a proyecto mongoDB</button></a>  
+    </div>
+
+    <section class="descripcion">
+        <h2 class="Titulos_h2">
+            Proyecto MongoDB
+        </h2> 
+        <p style="text-align: left">
+            Este proyecto está creado con la intención de manipular una base de datos online y poder realizar las operaciones básicas como: ingresar, editar y eliminar los registros de una base de datos, esto a través de un formulario que esté conectado con la base de datos. Para este proyecto se ejemplificó la base base de datos para una constructora, la cual permite el ingreso de los materiales de la constructora.<br>
+
+            <br>Para este proyecto se trabajó con las siguientes tecnologías.<br> 
+
+            <br><strong>1. HTML:</strong> Por medio de páginas HTML se puede visualizar el formulario que contiene la interfáz gráfica para el usuario.
+
+            <br><strong>2. CSS:</strong> Utilizado para poder darle estilo a la vista del fomulario. 
+            <br><strong>3. NodeJs:</strong> Se utilizó para poder poder comunicar la base de datos con los archivos .js y .ejs, por medio de node se puede accesar a la vista de la base de datos y conectar la base de datos. 
+            <br><strong>4. MongoDB:</strong> Es el sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales, MongoDB guarda estructuras de datos JSON. <br>
+        </p> <br>
+
+        <div id="espacio-portada">
+            <div id="portada">
+                <section class="portada">
+                <img style="border-radius: 10%;" id="portada" src="../img/Logo1.JPG" alt="">
+                </section>
+            </div>
+        </div> <br>
+        
+        <p style="text-align: left">
+            <br>También se utilizaron dependencias para el proyecto, estás facilitaron la comunicación y el manejo de datos entre el usuario y la base de datos. Entre las dependencias están.<br> 
+
+            <br><strong>1. express:</strong> Se utiliza como marco de aplicación web de back-end para Node.js, está diseñado para crear aplicaciones web y API. 
+            <br><strong>2. ejs:</strong> Simplemente significa JavaScript integrado. Se encuentra entre los motores de visualización de plantillas más populares para Node.js y Express.js.
+            <br><strong>3. mongoose:</strong> Es utilizado para poder crear la comunicación con la base de datos de MongoBD.
+            <br><strong>4. body-parse:</strong> Mongoose es una herramienta de modelado de objetos de MongoDB diseñada para funcionar en un entorno asincrónico. Mongoose admite promesas y devoluciones de llamada.
+            <br><strong>5. dotenv:</strong> Se utilizó para poder asiganar un puerto por default.  
+            
+        </p>
+
+       <img style="border-radius: 10%;" id="portada" src="../img/vistamongo.png" alt="">
+    </section>
+
+
+    <!--FOOTER-->
+    {{> footer}}
+
+    <script src="../assets/js/menu.js"></script> 
+
+</body>
+</html>
+
+
+
+

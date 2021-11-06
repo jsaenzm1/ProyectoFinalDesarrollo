@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Normalize y estilo-->
+    <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="../assets/css/estiloPrueba.css">
+        
+    <title>Portafolio | Habilidades</title>
+
+</head>
+<body>
+
+    <!--HEADER-->
+    {{> header}}
+
+    <!--PORTADA-->
+    {{> portada}}
+
+
+    <!--Sección del título y descripción-->
+    <section class="descripcion">
+        <h2 class="Titulos_h2">
+            Habilidades
+        </h2> 
+        <p>
+            Mis habilidades las puedo dividir en 4 fases, las cuales forman parte de mi caracter y mi personalidad. 
+        </p>
+    </section>
+
+    <div class="contenedor_General contenedor_habilidades">
+
+        <!--PRIMER BLOUE-->
+        <div class="bloque_habilidades">
+            <h3>
+                Habilidades Interpersonales
+            </h3>
+            <p>
+                <ul class="detalle_p_habilidades">
+                    <li>Resilencia</li>
+                    <li>Responsabilidad</li>
+                    <li>Motivación</li>
+                    <li>Compromiso</li>
+                </ul>
+            </p>
+        </div>
+
+        <!--SEGUNDO BLOUE-->
+        <div class="bloque_habilidades">
+            <h3>
+                Habilidades Sociales
+            </h3>
+            <p>
+                <ul class="detalle_p_habilidades">
+                    <li>Capacidad de Integración</li>
+                    <li>Capacidad de comunicación</li>
+                    <li>Capacidad de aceptar las críticas</li>
+                </ul>
+            </p>
+        </div>
+
+        <!--TERCER BLOUE-->
+        <div class="bloque_habilidades">
+            <h3>
+                Habilidades Metódicos
+            </h3 class="titulo_h3_habilidades">
+            <p>
+                <ul class="detalle_p_habilidades">
+                    <li>Capacidad e Organización</li>
+                    <li>Resistencia al estrés</li>
+                    <li>Resolución de problemas</li>
+                    <li>Habilidad numérica</li>
+                </ul>
+            </p>
+        </div>
+
+        <!--CUARTO BLOUE-->
+        <div class="bloque_habilidades">
+            <h3>
+               Pasatiempos
+            </h3>
+            <p>
+                <ul class="detalle_p_habilidades">
+                    <li>Ejercicio: ciclismo, futbol, basketbol</li>
+                    <li>Ejecutar instrumentos: guitarra, marimba, violín</li>
+                    <li>Dibujar y pintar: Temperas, crayones, oleo, claroscuro</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+   {{> footer}}
+
+    <script src="../assets/js/menu.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Normalize y estilo-->
+   <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="../assets/css/estiloPrueba.css">
+    
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    {{> header}}
+
+    <!--PORTADA-->
+    {{> portada}}
+
+    <section>
+        <div id="nombre">
+            <p>
+                Jakeline Del Rocío Sáenz Mogollón
+            </p>
+        </div>
+        <br>
+        <p id="texto1">
+            Hola, me llamo Rocío Sáenz, actualmente soy estudiante de la Universidad Mariano Gálvez de Guatemala 
+            y estoy cursando la carrare de Ingeniería en sistemas y ciencias de la computación.  
+        </p>
+    </section>
+    <!--MAIN-->
+
+    <div class="line"></div>
+    <section class="AcercaDeMi" id="acercaDeMi">
+        <h2 class="subtitulo">Acerca de mí:</h2> 
+
+        <div class="eleccionA"> 
+            <!--Sección de formación académica-->
+            <section class="eleccion" id="formacion">
+                <div id="formacion">
+                    <a title="Formación académica" href="/formacion">
+                        <img class="imagenEleccion" src="../img/Portafolio/formacion.jpg" alt="Formación Académica" width="300" height="300"/>
+                    </a>
+                </div>
+                <h3>Formación Académica</h3>
+                <p>
+                    La educación es el arma más poderosa que puedes usar para cambiar el mundo.
+                </p>
+                <p id="autor">
+                    "Nelson Mandela"
+                </p>
+            </section>
+
+            <!--Sección de proyectos-->
+            <section class="eleccion" id="proyectos">
+                <div id="proyectos">
+                    <a title="Proyectos" href="/proyectos">
+                        <img class="imagenEleccion" src="../img/Portafolio/Proyectos.jpg" alt="Proyectos" width="300" height="300"/>
+                    </a>
+                </div>
+                <h3>Proyectos</h3>
+                <p>
+                    No documentes el problema, arréglaro.
+                </p>
+            </section>
+
+            <br>
+
+            <!--Sección de certificados-->
+            <section class="eleccion1" id="certificados">
+                <div id="certificados">
+                    <a title="Certificaciones" href="/certificaciones">
+                        <img class="imagenEleccion" id="imagenEleccion" src="../img/Portafolio/certificaciones.jpg" alt="Certificaciones" width="300" height="300"/>
+                    </a>
+                </div>
+                <h3>Certificaciones</h3>
+                <p>
+                    La educación no se trata de aprobar un exámen; la educación se trata de aprender. 
+                </p>
+                <p id="autor">
+                    "Sadhguru"
+                </p>
+            </section>
+
+            <!--Sección de habilidades-->
+            <section class="eleccion" id="habilidad">
+                <div id="habilidad">
+                    <a title="Habilidades" href="/habilidades">
+                        <img class="imagenEleccion" src="../img/Portafolio/habilidades.jpg" alt="Habilidades" width="300" height="300"/>
+                    </a>
+                </div>
+                <h3>Habilidades</h3>
+                <p>
+                    Aprender a aprender es la habilidad más importante de la vida. 
+                </p>
+                <p id="autor">
+                    "Tony Buzan"
+                </p>
+            </section>
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+   {{> footer}}
+
+    <script src="../assets/js/menu.js"></script> 
+
+</body>
+</html>
+
+

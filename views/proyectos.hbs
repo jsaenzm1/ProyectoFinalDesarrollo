@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Normalize y estilo-->
+   <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="../assets/css/estiloPrueba.css">
+    
+    <title>Portafolio | Proyectos</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    {{> header}}
+
+    <!--PORTADA-->
+    {{> portada}}
+    
+
+    <div class="espacio_titulo_proyecto">
+        <h2 class="Titulos_h2">Proyectos</h2> 
+    </div>
+
+    <div class="div_proyectos_Principal" id="proyectos">
+        <!--Sección de formulario JS-->
+        <section class="seccion_espacio_img" id="ProyectoDesarrollo">
+            <div id="formacion">
+                <a title="Validación de formulario" href="/formulario">
+                    <img class="imagenEleccion" src="../img/Proyectos/lenguaje1.jpg" width="300" height="300"/>
+                </a>
+            </div>
+            <h3>Validación de forumulario</h3>
+            <p>
+                Sitio Web: Validación de formulario con HTML, CSS y JS.
+            </p>
+        </section>
+
+        <!--Sección de proyectos-->
+        <section class="eleccion" id="proyectosProgra">
+            <div id="proyectos">
+                <a title="Proyectos" href="/proyectosProgra">
+                    <img class="imagenEleccion" src="../img/Proyectos/lenguaje2.jpg" width="300" height="300"/>
+                </a>
+            </div>
+            <h3>Proyecto de MongoDB</h3>
+            <p>
+                Creación de base de datos con MongoDB, express Y Heroku.
+            </p>
+        </section>
+
+
+        <section class="eleccion section_nodejs" id="proyectosProgra">
+            <div id="proyectos">
+                <a title="Proyectos" href="/sistemaNodeJs">
+                    <img class="imagenEleccion_node" src="../img/Proyectos/node.png" width="300" height="300"/>
+                </a>
+            </div>
+            <h3>Sistema con NodeJs</h3>
+            <p>
+                Sistema para tablas de multiplicar.
+            </p>
+        </section> 
+    </div>
+
+    <!--FOOTER-->
+    {{> footer}}
+
+
+    <script src="../assets/js/menu.js"></script> 
+
+</body>
+</html>
+
+

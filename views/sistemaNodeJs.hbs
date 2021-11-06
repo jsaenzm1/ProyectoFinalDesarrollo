@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Normalize y estilo-->
+   <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="../assets/css/estiloPrueba.css">
+    
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    {{> header}}
+  
+   
+    <!--MAIN-->
+    <div style="margin: 10px;">
+        <a href="https://github.com/jsaenzm1/Proyecto-Tablas-NodeJs"><button class="btn-mongoDB">Ir a repositorio de GitHub</button></a>  
+    </div>
+
+
+    <!--Sección del título y descripción-->
+    <section class="descripcion">
+        <h2 class="Titulos_h2">
+            Tablas de multiplicar con NodeJs
+        </h2> 
+        <p>
+            El proyecto consiste en crear una aplicación de consola con NodeJs, donde se impriman las 
+            tablas de multiplicar que el usuario desee. La aplicación pedirá la tabla de multiplicar 
+            inicial y luego la tabla de multiplicar final, la aplicación creará un archivo .txt de cada 
+            una de las tablas. 
+            La aplicación tiene que funcionar con el paquete npm “yargs” para poder darle parámetros a 
+            la aplicación por medio de la línea de comandos.
+        </p>
+        <h2 class="Titulos_h2">
+            Creación del proyecto
+        </h2> 
+        <p class="p_texto_descripcion_proyecto"> 
+            1. Crear la carpeta principal que contendrá todos los archivos <br>
+            <br> Dentro de la carpeta principal. <br>
+            2.	Crear el archivo principal “app.js” <br>
+            3.	Ir a la carpeta principal en consola e iniciar el proyecto: npm init, esto generará el package.json <br>
+            4.	Instalar en consola yargs y colors: 
+                <ul class="ul_lista_descripcion_proyecto">
+                    <li>npm yargs</li>
+                    <li>npm colors</li>
+                </ul>
+        </p>
+        <p class="p_texto_descripcion_proyecto">
+            5.	Crear el directorio “helpers” y dentro crear el archivo “multiplicar.js” <br>
+            6.	Crear el directorio “config” y dentro crear el archivo “yargs.js” <br>
+            7.	Ejecutar el proyecto con: 
+                <ul class="ul_lista_descripcion_proyecto">
+                    <li>node app --base=1 --final=8 --listar --hasta=10</li>
+                    <li>node app --b=1 --f=8 --l --h=10</li>
+                    <li>node app --base=1 --final=8 --hasta=10</li>
+                </ul>
+        </p>
+        <p class="p_texto_descripcion_proyecto">
+            <strong>base:</strong> indica con que tabla de multiplicar queremos empezar <br>
+            <strong>final:</strong> indica con que tabla de multiplicar queremos finalizar <br>
+            <strong>listar:</strong> indica si queremos imprimir las tablas de multiplicar en consola <br>
+            <strong>hasta:</strong> indica hasta que número queremos que lleguen las tablas de multiplicar.  <br>
+        </p>
+    </section>
+
+
+    <!--FOOTER-->
+    {{> footer}}
+
+    <script src="../assets/js/menu.js"></script> 
+
+</body>
+</html>
+
+
